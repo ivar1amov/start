@@ -1,0 +1,63 @@
+// <Основной файл scss>
+
+// <Переменные для style.scss>
+$minWidth: 320px; // Минимальная ширина сайта
+$maxWidth: 1920px; // Максимальная ширина сайта
+$maxWidthContainer: 1140px; // Максимальная ширина контейнера
+$md1: $maxWidthContainer;
+$md2: 991.98px;
+$md3: 768.98px;
+$md4: 479.98px;
+// </Переменные для style.scss>
+
+/* ========== обнуляющий стиль + оболочка ========== */
+@import "null";
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/* ========== ОСНОВНАЯ СЕТКА ========== */
+.container {
+	max-width: $maxWidthContainer;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 15px;
+	// @media (max-width: $md1) {
+	// 	max-width: 970px;
+	// }
+	// @media (max-width: $md2) {
+	// 	max-width: 750px;
+	// }
+	// @media (max-width: $md3) {
+	// 	max-width: none;
+	// }
+}
+
+/* ========== ОСНОВНОЙ БЛОК ========== */
+.main {
+	flex: 1 1 auto;
+}
+/* ========== element ========== */
+.slogan {
+	font-family: "IBM Plex Mono", sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.67;
+	text-transform: uppercase;
+	color: $accent;
+}
+.title {
+	font-family: "IBM Plex Mono", sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.subtitle {
+	line-height: 1.63;
+	color: $workTextColor;
+}

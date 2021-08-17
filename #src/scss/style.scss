@@ -1,0 +1,11 @@
+// импорт всех стилей scss
+@import "vars";
+@import "fonts";
+@import "base";
+@import "media-queries";
+@import "test";
+// // @import "popup";
+// // Импорт стилей блоков
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/footer";
